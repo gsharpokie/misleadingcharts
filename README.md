@@ -1,6 +1,6 @@
 # Spot the Misleading Chart
 
-Six charts built from real numbers, each drawn to mislead. Students pick what’s wrong with each one, then see the same data drawn honestly next to it. The page ends with a checklist for reading any chart. By Gwen Sharp, as a companion to Chapter 2 (Research Methods) of *A Sociology Experiment*.
+Six charts built from real numbers, each drawn to mislead. Students pick what’s wrong with each one, then see the same data drawn honestly next to it. The page ends with a checklist for reading any chart. By Gwen Sharp.
 
 **Live site:** https://gsharpokie.github.io/misleadingcharts/
 
