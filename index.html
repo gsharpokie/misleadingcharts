@@ -86,6 +86,12 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--focus); outline
 footer { font-size: .85rem; color: var(--muted); }
 .hidden { display: none !important; }
 @media (max-width: 640px) { .pair.two { grid-template-columns: 1fr; } .card { padding: 1.1rem; } }
+
+/* Let long links (like the citation URL) wrap on narrow phones instead of widening the page. */
+a { overflow-wrap: anywhere; }
+
+/* Main landmark for screen readers; keeps the same spacing as before. */
+.wrap-main { display: grid; gap: inherit; min-width: 0; }
 </style>
 </head>
 <body>
@@ -95,6 +101,7 @@ footer { font-size: .85rem; color: var(--muted); }
     <h1>Spot the Misleading Chart</h1>
     <p class="lede">Every number in these six charts is real. Each chart is still drawn to give you the wrong idea. Find the trick, then see the same numbers drawn honestly.</p>
   </header>
+  <main class="wrap-main">
 
   <section class="card" id="play" aria-live="polite">
     <div class="meta"><span id="counter"></span><button class="linkish" id="skip">Skip to the checklist</button></div>
@@ -143,6 +150,7 @@ footer { font-size: .85rem; color: var(--muted); }
     <p>Spot an error? <a href="https://github.com/gsharpokie/misleadingcharts/issues/new">Suggest a correction</a> (needs a free GitHub account).</p>
   </section>
 
+  </main>
   <footer>Created by Gwen Sharp (<a href="https://x.com/gsharpokie">@gsharpokie</a>). Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</footer>
 </div>
 
